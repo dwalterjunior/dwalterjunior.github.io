@@ -1,86 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Google</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .google-logo {
-      margin-top: 100px;
-    }
-
-    .search-box {
-      margin-top: 20px;
-    }
-
-    input[type="text"] {
-      width: 60%;
-      max-width: 600px;
-      padding: 12px 20px;
-      font-size: 16px;
-      border: 1px solid #dfe1e5;
-      border-radius: 24px;
-      outline: none;
-      box-shadow: none;
-    }
-
-    input[type="text"]:focus {
-      border-color: #4285f4;
-      box-shadow: 0 0 5px rgba(66, 133, 244, 0.3);
-    }
-
-    .buttons {
-      margin-top: 20px;
-    }
-
-    .buttons input {
-      margin: 5px;
-      padding: 10px 20px;
-      background-color: #f8f9fa;
-      border: 1px solid #f8f9fa;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    .buttons input:hover {
-      border: 1px solid #c6c6c6;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Honors Design & Innovation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="google-logo">
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-         alt="Google Logo" width="272" height="92">
-  </div>
-
-  <form class="search-box" action="https://www.google.com/search" method="GET">
-    <input type="text" name="q" placeholder="Search Google or type a URL" required>
-    <div class="buttons">
-      <input type="submit" value="Google Search">
-      <input type="submit" name="btnI" value="I'm Feeling Lucky">
+  <header class="navbar">
+    <div class="container inner">
+      <div class="logo">HD&I Portfolio</div>
+      <nav class="nav">
+        <a href="senior-design.html">Senior Design</a>
+        <a href="mini-projects.html">Mini Projects</a>
+        <a href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </nav>
     </div>
-  </form>
+  </header>
+
+  <section class="hero">
+    <div class="container wrap">
+      <div class="kicker">Honors Design & Innovation</div>
+      <h1>Design. Innovate. Inspire.</h1>
+      <p>Senior-year portfolio showcasing a full product journey, from problem framing to a polished final presentation—plus hands-on fabrication sprints.</p>
+      <div class="cta">
+        <a class="button" href="senior-design.html">Explore Senior Design</a>
+        <a class="button-outline" href="mini-projects.html">See Fabrication Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <a class="card" href="senior-design.html">
+        <h2>Senior Design Project</h2>
+        <p class="muted">Track the project through each milestone.</p>
+        <div class="tags">
+          <span class="tag">Problem</span>
+          <span class="tag">PDR</span>
+          <span class="tag">CDR</span>
+          <span class="tag">Final</span>
+        </div>
+      </a>
+      <a class="card" href="mini-projects.html">
+        <h2>Mini Fabrication</h2>
+        <p class="muted">CNC, embedded systems, molding & more.</p>
+        <div class="tags">
+          <span class="tag">CAD/CAM</span><span class="tag">CNC</span><span class="tag">Electronics</span>
+        </div>
+      </a>
+      <a class="card" href="about.html">
+        <h2>About Me</h2>
+        <p class="muted">Background, skills, and design philosophy.</p>
+        <div class="tags">
+          <span class="tag">UX</span><span class="tag">Mech Design</span><span class="tag">Prototyping</span>
+        </div>
+      </a>
+    </div>
+  </section>
 
   <footer>
-    Not affiliated with Google. This is a mock clone for educational purposes.
+    <div class="container">&copy; 2025 Your Name — Honors Design & Innovation</div>
   </footer>
-
 </body>
 </html>

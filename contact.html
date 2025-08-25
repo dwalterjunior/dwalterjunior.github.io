@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container inner">
+    <div class="logo">HD&I Portfolio</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="senior-design.html">Senior Design</a>
+      <a href="mini-projects.html">Mini Projects</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p>I’d love to connect about design, internships, or collaborations.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid-2">
+    <div class="card">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/yourname</a></p>
+      <p><strong>Location:</strong> Your City, State</p>
+    </div>
+    <div class="card">
+      <h2>Message Me</h2>
+      <!-- Mailto form (opens email client) -->
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="Name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="Email" required>
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea id="msg" name="Message" required></textarea>
+        </div>
+        <div class="actions">
+          <button class="button" type="submit">Send</button>
+          <a class="button-outline" href="index.html">Back Home</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container">&copy; 2025 Your Name</div></footer>
+</body>
+</html>
